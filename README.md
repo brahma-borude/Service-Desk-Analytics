@@ -84,7 +84,7 @@ These are the four metrics that IT Operations management tracks above all else. 
 ---
 
 ## Executive Summary
-![powerbi dashboard](outputs/powerbi/01_dashboard.pbix)  
+![powerbi dashboard](outputs/powerbi/01_dashboard-1.png)  
 The IT service desk handled **5,000 tickets across January–June 2025**, averaging 833 tickets per month. Overall SLA compliance stands at **76.8%**, below the contracted 90% target, representing a gap of 13.2 percentage points.
 
 The most critical finding is that **P1-Critical tickets breach SLA at a rate of 30.4%**, meaning nearly 1 in 3 system-critical incidents is resolved late. At an average resolution time of 3 hours, the margin of failure is narrow but consistent — suggesting a structural resourcing gap at peak pressure moments rather than a widespread competence issue.
