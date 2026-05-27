@@ -1,0 +1,16 @@
+agent_id,total_tickets,avg_resolution_h,breach_count,avg_csat,p1_tickets,breach_rate,workload_flag
+AGT-00001,609,23.0,133,3.49,27,21.8,Overloaded
+AGT-00002,599,22.8,126,3.44,21,21.0,Overloaded
+AGT-00003,560,21.7,145,3.46,29,25.9,Overloaded
+AGT-00004,423,24.2,95,3.45,22,22.5,Normal
+AGT-00005,359,23.9,89,3.3,20,24.8,Normal
+AGT-00006,350,24.0,75,3.47,18,21.4,Normal
+AGT-00007,382,23.0,112,3.3,17,29.3,Normal
+AGT-00008,398,24.1,88,3.35,23,22.1,Normal
+AGT-00009,193,21.9,46,3.45,10,23.8,Underloaded
+AGT-00010,188,23.0,41,3.44,7,21.8,Underloaded
+AGT-00011,193,21.4,46,3.37,18,23.8,Underloaded
+AGT-00012,182,21.9,35,3.51,15,19.2,Underloaded
+AGT-00013,177,21.9,41,3.38,12,23.2,Underloaded
+AGT-00014,209,22.1,47,3.46,8,22.5,Underloaded
+AGT-00015,178,24.1,41,3.25,10,23.0,Underloaded

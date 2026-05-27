@@ -1,0 +1,5 @@
+priority,total_tickets,breached,compliance_rate,avg_resolution
+P1-Critical,257,78,69.6,3.0500389105058368
+P2-High,1015,347,65.8,6.5563940886699505
+P3-Medium,2494,555,77.7,18.07211708099439
+P4-Low,1234,180,85.4,50.53035656401945
