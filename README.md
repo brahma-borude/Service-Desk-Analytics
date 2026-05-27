@@ -84,7 +84,7 @@ These are the four metrics that IT Operations management tracks above all else. 
 ---
 
 ## Executive Summary
-
+![powerbi dashboard](outputs/powerbi/01_dashboard.pbix)  
 The IT service desk handled **5,000 tickets across January–June 2025**, averaging 833 tickets per month. Overall SLA compliance stands at **76.8%**, below the contracted 90% target, representing a gap of 13.2 percentage points.
 
 The most critical finding is that **P1-Critical tickets breach SLA at a rate of 30.4%**, meaning nearly 1 in 3 system-critical incidents is resolved late. At an average resolution time of 3 hours, the margin of failure is narrow but consistent — suggesting a structural resourcing gap at peak pressure moments rather than a widespread competence issue.
@@ -100,7 +100,7 @@ Three priority actions emerge from this analysis: implement a P1 auto-escalation
 ## Insight Deep Dive
 
 ### 1. SLA Compliance by Priority
-
+![SLA Compliance by Priority](outputs/charts/02_sla_compliance.png)
 **Observation**
 
 SLA compliance varies dramatically by priority level, ranging from 64.7% for P4-Low tickets to just 32.4% for P1-Critical tickets. Every priority tier is below the 90% target, but the severity of failure is inverted from what would be operationally ideal — the most urgent ticket type has the worst compliance.
@@ -126,8 +126,8 @@ Separate P1 tickets from the general queue entirely. Designate at least two seni
 
 ---
 
-### 2. Time-of-Week Breach Patterns
-
+### 2. Time-of-Week Breach Patterns  
+![Time-of-week Breach Patterns](outputs/charts/03_breach_heatmap.png)  
 **Observation**
 
 Breach rates are not uniformly distributed across the week. The heatmap analysis reveals two distinct high-risk windows: **Monday mornings** (elevated across all priorities, particularly P1 and P2) and **Friday afternoons into weekends** (P2 and P3 breach rates increase as the week ends).
@@ -144,7 +144,8 @@ Two targeted interventions: first, implement a weekend triage shift — a single
 
 ---
 
-### 3. Agent Workload & Performance
+### 3. Agent Workload & Performance  
+![Agent Workload & Performance](outputs/charts/04_agent_analysis.png)
 
 **Observation**
 
@@ -168,9 +169,9 @@ Implement volume-based queue balancing: cap individual agent queues at 1.2 times
 
 ---
 
-### 4. MTTR Trends Over Time
-
-**Observation**
+### 4. MTTR Trends Over Time  
+![MTTR Trends over Time](outputs/charts/05_mttr_trends.png)  
+**Observation**  
 
 Overall MTTR has remained persistently elevated across the full 6-month period, ranging from a low of 28.0 hours in January to a high of 30.0 hours in June. The absence of meaningful month-on-month improvement indicates that no structural changes were made to resolution processes during this period.
 
