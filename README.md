@@ -22,13 +22,13 @@
 
 ### What is an IT Service Desk?
 
-Every mid-to-large company has an internal IT team that employees rely on when something breaks — a laptop that won't start, software that crashes, a network outage affecting the floor. Instead of calling their manager, employees raise a **support ticket** through a system like ServiceNow or JIRA. A team of agents picks up these tickets and resolves them.
+Every mid-to-large company has an internal IT team that employees rely on when something breaks, a laptop that won't start, software that crashes, a network outage affecting the floor. Instead of calling their manager, employees raise a **support ticket** through a system like ServiceNow or JIRA. A team of agents picks up these tickets and resolves them.
 
-The speed and quality of this resolution process is governed by a **Service Level Agreement (SLA)** — a contractual promise that defines the maximum time allowed to resolve a ticket depending on its urgency. For IT service companies like TCS, Infosys, or Genpact, failing to meet these SLA targets triggers financial penalties and damages client relationships.
+The speed and quality of this resolution process is governed by a **Service Level Agreement (SLA)**, a contractual promise that defines the maximum time allowed to resolve a ticket depending on its urgency. For IT service companies like TCS, Infosys, or Genpact, failing to meet these SLA targets triggers financial penalties and damages client relationships.
 
 ### Dataset
 
-This project uses a **synthetic dataset of 5,000 IT helpdesk tickets** generated to mirror the schema and distribution patterns of real ServiceNow data. The dataset spans January to June 2024 and includes:
+This project uses a **synthetic dataset of 5,000 IT helpdesk tickets** generated to mirror the schema and distribution patterns of real ServiceNow data. The dataset spans January to June 2025 and includes:
 
 | Field | Description |
 |---|---|
@@ -73,9 +73,9 @@ These are the four metrics that IT Operations management tracks above all else. 
 
 ### Why these four?
 
-**SLA Compliance** is the contractual obligation — it's what the client is paying for and measuring.
+**SLA Compliance** is the contractual obligation, it's what the client is paying for and measuring.
 
-**MTTR** is the operational health indicator — it tells you whether things are getting resolved quickly or piling up.
+**MTTR** is the operational health indicator, it tells you whether things are getting resolved quickly or piling up.
 
 **P1 Breach Rate** is isolated because P1 failures are not equal to other failures. A P1 breach means a business-critical system stayed down longer than promised. The business impact is exponentially higher than a P3 or P4 breach.
 
@@ -85,15 +85,15 @@ These are the four metrics that IT Operations management tracks above all else. 
 
 ## Executive Summary
 
-The IT service desk handled **5,000 tickets across January–June 2024**, averaging 833 tickets per month. Overall SLA compliance stands at **54.4%** — significantly below the contracted 90% target, representing a gap of 35.6 percentage points.
+The IT service desk handled **5,000 tickets across January–June 2025**, averaging 833 tickets per month. Overall SLA compliance stands at **76.8%**, below the contracted 90% target, representing a gap of 13.2 percentage points.
 
-The most critical finding is that **P1-Critical tickets breach SLA at a rate of 32.4%**, meaning nearly 1 in 3 system-critical incidents is resolved late. At an average resolution time of 5.5 hours against a 4-hour SLA, the margin of failure is narrow but consistent — suggesting a structural resourcing gap at peak pressure moments rather than a widespread competence issue.
+The most critical finding is that **P1-Critical tickets breach SLA at a rate of 30.4%**, meaning nearly 1 in 3 system-critical incidents is resolved late. At an average resolution time of 3 hours, the margin of failure is narrow but consistent — suggesting a structural resourcing gap at peak pressure moments rather than a widespread competence issue.
 
-Workload analysis reveals that the top 3 agents (AGT-00001, AGT-00002, AGT-00003) collectively handle **34% of all ticket volume**, with the highest-load agent managing 3.2 times the ticket count of the lowest-load agent. Agents carrying above-average workloads show a **breach rate 8 percentage points higher** than balanced agents, directly linking distribution inequality to service quality degradation.
+Workload analysis reveals that the top 3 agents (AGT-00001, AGT-00002, AGT-00003) collectively handle **23.1% of all ticket volume**, with the highest-load agent managing 3.2 times the ticket count of the lowest-load agent. Agents carrying above-average workloads show a **breach rate 6 percentage points higher** than balanced agents, directly linking distribution inequality to service quality degradation.
 
-MTTR across the 6-month period has remained consistently elevated at **28.9 hours** — 2.4 times the 12-hour operational target. The absence of a downward trend indicates that current resourcing and process configurations are insufficient to close the gap without structural intervention.
+MTTR across the 6-month period has remained consistently elevated at **23 hours**, almost 2 times the 12-hour operational target. The absence of a downward trend indicates that current resourcing and process configurations are insufficient to close the gap without structural intervention.
 
-Three priority actions emerge from this analysis: implement a P1 auto-escalation protocol, rebalance ticket assignment logic, and investigate the Network and Hardware categories which show disproportionately high breach rates relative to their ticket volume.
+Three priority actions emerge from this analysis: implement a P1 auto-escalation protocol, rebalance ticket assignment logic, and investigate the Access Management and Software categories which show disproportionately high breach rates relative to their ticket volume.
 
 ---
 
@@ -107,14 +107,14 @@ SLA compliance varies dramatically by priority level, ranging from 64.7% for P4-
 
 | Priority | Compliance Rate | Breach Rate | Gap to 90% Target |
 |---|---|---|---|
-| P1-Critical | 32.4% | **67.6%** | 57.6 pp |
-| P2-High | 41.8% | 58.2% | 48.2 pp |
-| P3-Medium | 56.3% | 43.7% | 33.7 pp |
-| P4-Low | 64.7% | 35.3% | 25.3 pp |
+| P1-Critical | 65.8% | **34.2%** | 31.6 pp |
+| P2-High | 69.6% | 30.4% | 39.2 pp |
+| P3-Medium | 77.7% | 22.3% | 55.4 pp |
+| P4-Low | 85.4% | 14.6% | 70.8 pp |
 
 **Why this matters**
 
-P1 tickets represent system-down events — situations where entire teams cannot work, client-facing services are unavailable, or security incidents are active. Each P1 breach beyond 4 hours directly translates into extended business disruption and, in contracted environments, financial penalties. A 67.6% breach rate on P1 tickets is not a minor performance issue — it is a structural failure in the organisation's response capability for its highest-stakes scenarios.
+P1 tickets represent system-down events — situations where entire teams cannot work, client-facing services are unavailable, or security incidents are active. Each P1 breach beyond 4 hours directly translates into extended business disruption and, in contracted environments, financial penalties. A 34.2% breach rate on P1 tickets is not a minor performance issue — it is a structural failure in the organisation's response capability for its highest-stakes scenarios.
 
 **Root cause**
 
@@ -122,7 +122,7 @@ P1 tickets disproportionately breach because they require senior engineers who a
 
 **What should change**
 
-Separate P1 tickets from the general queue entirely. Designate at least two senior engineers as P1 first-responders at any given time, with automatic escalation to a team lead if unresolved after 2 hours. This alone should reduce P1 breach rate from 67.6% toward the sub-10% target.
+Separate P1 tickets from the general queue entirely. Designate at least two senior engineers as P1 first-responders at any given time, with automatic escalation to a team lead if unresolved after 2 hours. This alone should reduce P1 breach rate from % toward the sub-10% target.
 
 ---
 
@@ -246,5 +246,5 @@ Jupyter Notebook  End-to-end analysis narrative
 
 ---
 
-*Dataset: 5,000 synthetic tickets modelled on ServiceNow schema | Period: Jan–Jun 2024*
+*Dataset: 5,000 synthetic tickets modelled on ServiceNow schema | Period: Jan–Jun 2025*
 *Built as part of a Data Analyst portfolio targeting IT operations roles at TCS, Infosys, Genpact, and Accenture*
