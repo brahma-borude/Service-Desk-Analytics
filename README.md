@@ -1,5 +1,5 @@
 # IT Service Desk Operations Analytics
-### Diagnosing SLA Failures, Agent Bottlenecks, and Resolution Delays Across 5,000 Tickets — Jan to Jun 2024
+### Diagnosing SLA Failures, Agent Bottlenecks, and Resolution Delays Across 5,000 Tickets — Jan to Jun 2025
 
 ![Dashboard](outputs/powerbi/01_dashboard-1.png)
 
@@ -30,7 +30,7 @@ For IT services companies like TCS, Genpact, or Accenture — who operate servic
 
 ### Dataset
 
-This project uses a synthetic dataset of **5,000 IT helpdesk tickets** generated to mirror the schema and behavioral patterns of real ServiceNow data, including realistic priority distributions, agent workload imbalance, and time-of-day ticket patterns. The dataset spans January to June 2024 across 15 agents and 5 ticket categories.
+This project uses a synthetic dataset of **5,000 IT helpdesk tickets** generated to mirror the schema and behavioral patterns of real ServiceNow data, including realistic priority distributions, agent workload imbalance, and time-of-day ticket patterns. The dataset spans January to June 2025 across 15 agents and 5 ticket categories.
 
 | Field | Description |
 |---|---|
@@ -84,7 +84,7 @@ Four metrics drive every decision in IT operations analytics. Everything in this
 
 ## Executive Summary
 
-The IT service desk processed **5,000 tickets between January and June 2024**, averaging 833 tickets per month across 15 agents and 5 ticket categories. Overall SLA compliance stands at **76.8%** — 13.2 percentage points below the contracted 90% target, with **1,160 tickets (23.2%) breaching their SLA**.
+The IT service desk processed **5,000 tickets between January and June 2025**, averaging 833 tickets per month across 15 agents and 5 ticket categories. Overall SLA compliance stands at **76.8%** — 13.2 percentage points below the contracted 90% target, with **1,160 tickets (23.2%) breaching their SLA**.
 
 The most urgent finding is that **P2-High tickets have the highest breach rate in the dataset at 34.2%** — worse than P1-Critical at 30.4%. P2 tickets represent serious incidents (application crashes, security issues) with an 8-hour SLA window, yet they fail more often than the most critical tier. This points to a structural triage gap: P1 tickets trigger immediate escalation and visibility, but P2 tickets compete with high-volume P3 work in standard queues and are systematically de-prioritised.
 
@@ -284,6 +284,6 @@ Jupyter Notebook    Analysis narrative combining code, outputs, and findings
 
 ---
 
-*Dataset: 5,000 synthetic tickets modelled on ServiceNow schema | Period: Jan–Jun 2024 | 15 agents | 5 ticket categories*
+*Dataset: 5,000 synthetic tickets modelled on ServiceNow schema | Period: Jan–Jun 2025 | 15 agents | 5 ticket categories*
 
 *Built as part of a Data Analyst portfolio targeting IT operations analytics roles at TCS, Infosys, Genpact, and Accenture.*
